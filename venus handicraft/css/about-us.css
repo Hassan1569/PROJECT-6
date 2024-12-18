@@ -1,0 +1,298 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.slider {
+    position: relative;
+    height: 300px; /* Set the height to 300px */
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%; /* Ensure the slide fills the slider container */
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Optional: Adjust the overlay text to fit within the smaller height */
+.overlay {
+    position: absolute;
+  
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Background color for readability */
+    padding: 10px;
+    border-radius: 5px;
+    height: 300px; /* Set the height to 300px */
+    width: 100%;
+}
+
+
+
+.overlay h1 {
+    font-size: 3em;
+    margin: 0;
+ 
+}
+
+.overlay p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+
+/* Responsive Text Size */
+@media (max-width: 768px) {
+    .overlay h1 {
+        font-size: 2em;
+    }
+
+    .overlay p {
+        font-size: 1em;
+    }
+}
+
+.content-section {
+ 
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+ 
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+  }
+  
+  .breadcrumb-item a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .breadcrumb-item.active {
+    color: #fff;
+  }
+  
+
+.btn {
+    background-color: #c53d3c;
+   color: white;
+
+}
+
+.btn :hover {
+    background-color: white;
+    border-color: white;
+}
+
+
+.features-section {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 3rem 0; /* Adjust padding for better spacing */
+}
+
+.feature-content {
+    background-color: #fff; /* White background for feature boxes */
+    padding: 2rem; /* Inner padding */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.feature-content:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.colorrrr {
+    color: #007bff; /* Example color, adjust as needed */
+}
+
+.text-muted {
+    color: #6c757d; /* Subtle text color for paragraphs */
+}
+
+.mb-3 {
+    margin-bottom: 1rem; /* Spacing below headings */
+}
+
+.feature-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-content p {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.payment-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.feature::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    width: 1px;
+    background-color: #dee2e6;
+}
+
+.feature:first-child::before {
+    display: none;
+}
+
+.feature:nth-child(2)::before {
+    left: 0;
+}
+
+.feature:nth-child(3)::before {
+    left: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .feature::before {
+        display: none;
+    }
+
+    .features-section {
+        text-align: center;
+    }
+
+    .feature {
+        border-bottom: 1px solid #dee2e6;
+        margin-bottom: 20px;
+    }
+
+    .feature:last-child {
+        border-bottom: none;
+    }
+}
+
+.video-section {
+    background-color: #f8f9fa;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 0 auto;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+h2, h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 20px
+  }
+
+  .bgcolor{
+    background:#c53d3c;
+}
+.colorrrr{
+    color: #c53d3c;
+}
+.sha{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;  }
+
+    .testimonials-section {
+        background-color: #f9f9f9; /* Light background for contrast */
+        padding: 3rem 0; /* Adjust padding for spacing */
+    }
+    
+    .testimonial-card {
+        background-color: #fff; /* White background for cards */
+        border: 1px solid #ddd; /* Light border */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    }
+    
+    .testimonial-card:hover {
+        transform: translateY(-5px); /* Lift effect on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    }
+    
+    .testimonial-card img {
+        display: block;
+        margin: 0 auto; /* Center the image */
+    }
+    
+    .text-center {
+        text-align: center; /* Center-align text */
+    }
+    
+    .mb-2 {
+        margin-bottom: 0.5rem; /* Spacing below headings */
+    }
+    
+    .mb-4 {
+        margin-bottom: 1.5rem; /* Spacing below sections */
+    }
+    
+    .text-muted {
+        color: #6c757d; /* Subtle text color */
+    }
+    

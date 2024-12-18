@@ -1,0 +1,154 @@
+
+
+body{
+
+    margin: 0%;
+    padding: 0%;
+    
+}
+h1 {
+    font-size: 2.5rem; 
+    color: #333; 
+    font-weight: bold; 
+    margin-top: 30px; 
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  .gallery img {
+    width: 50%; 
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0; 
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  .col-md-6 {
+    padding: 0; 
+  }
+
+  
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .feature::before {
+        display: none;
+    }
+
+    .features-section {
+        text-align: center;
+    }
+
+    .feature {
+        border-bottom: 1px solid #dee2e6;
+        margin-bottom: 20px;
+    }
+
+    .feature:last-child {
+        border-bottom: none;
+    }
+}
+
+.video-section {
+    background-color: #f8f9fa;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 0 auto;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+h2, h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 20px
+  }
+
+  .bgcolor{
+    background:#c53d3c;
+}
+.colorrrr{
+    color: #c53d3c;
+}
+
+.btn {
+    background-color: #c53d3c;
+   color: white;
+
+}
+
+.btn :hover {
+    background-color: white;
+    border-color: white;
+}
+.sha{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;  }
+
+    .testimonials-section {
+        background-color: #f9f9f9; /* Light background for contrast */
+        padding: 3rem 0; /* Adjust padding for spacing */
+    }
+    
+    .testimonial-card {
+        background-color: #fff; /* White background for cards */
+        border: 1px solid #ddd; /* Light border */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    }
+    
+    .testimonial-card:hover {
+        transform: translateY(-5px); /* Lift effect on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    }
+    
+    .testimonial-card img {
+        display: block;
+        margin: 0 auto; /* Center the image */
+    }
+    
+    .text-center {
+        text-align: center; /* Center-align text */
+    }
+    
+    .mb-2 {
+        margin-bottom: 0.5rem; /* Spacing below headings */
+    }
+    
+    .mb-4 {
+        margin-bottom: 1.5rem; /* Spacing below sections */
+    }
+    
+    .text-muted {
+        color: #6c757d; /* Subtle text color */
+    }

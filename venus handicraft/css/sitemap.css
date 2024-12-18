@@ -1,0 +1,140 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul a {
+    color: #c53d3c;
+    text-decoration: none;
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+.sha {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.bgcolor {
+    background: #c53d3c;
+}
+
+.slider {
+    position: relative;
+    height: 300px; /* Set the height to 300px */
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%; /* Ensure the slide fills the slider container */
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Optional: Adjust the overlay text to fit within the smaller height */
+.overlay {
+    position: absolute;
+  
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Background color for readability */
+    padding: 10px;
+    border-radius: 5px;
+    height: 300px; /* Set the height to 300px */
+    width: 100%;
+}
+
+
+
+.overlay h1 {
+    font-size: 3em;
+    margin: 0;
+ 
+}
+
+.overlay p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+
+/* Responsive Text Size */
+@media (max-width: 768px) {
+    .overlay h1 {
+        font-size: 2em;
+    }
+
+    .overlay p {
+        font-size: 1em;
+    }
+}
+
+.content-section {
+ 
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+ 
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+  }
+  
+  .breadcrumb-item a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .breadcrumb-item.active {
+    color: #fff;
+  }
+  .btn {
+    background-color: #c53d3c;
+   color: white;
+
+}
+
+.btn :hover {
+    background-color: white;
+    border-color: white;
+}

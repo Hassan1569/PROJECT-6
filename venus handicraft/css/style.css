@@ -1,0 +1,177 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.carousel-item img {
+    height: 550px !important;
+    object-fit: cover; /* Ensures the image covers the entire area */
+    width: 100%;
+}
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 17...........00px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    color: #fff !important;
+    text-align: center;
+    z-index: 2; /* Ensure caption is above the overlay */
+    }
+    
+    .carousel-caption h1, .carousel-caption h3, .carousel-caption p {
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.carousel-caption button {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    background-color:
+    
+#c53d3c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.maincolor{
+    color: #c53d3c;
+}
+
+.carousel-caption button:hover {
+    background-color: #f2f3f5;
+    color: #c53d3c;
+}
+
+.content-left, .content-right {
+    padding: 20px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+.image-container {
+    margin-bottom: 20px;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners to images */
+}
+
+.about-us-section {
+    padding: 50px 0;
+    background-color: #ffffff; /* Optional: adds background color to the section */
+}
+.about-us-content {
+    text-align: center;
+}
+.about-us-content p {
+    margin-bottom: 1rem; /* Adjusts spacing between paragraphs */
+}
+
+.main-image img {
+    width: 100%;
+    height: 500px;
+
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+}
+.content-section {
+    padding: 20px;
+}
+.content-section h2 {
+    margin-bottom: 1rem; /* Adjust spacing as needed */
+}
+.content-section p {
+    margin-bottom: 1rem; /* Adjust spacing as needed */
+}
+
+.container .content-left h2{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    text-align: end;
+}
+
+.container .content-left p{
+    font-size: 1em;
+    text-align: end;
+}
+.container .content-right h2{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em; 
+    
+    
+}
+.container .content-right p{
+    font-size: 1em;
+}
+
+
+.container .about-us-content h1 {
+   font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    
+}
+.container .about-us-content p{
+    font-size: 1em;
+}
+.content-section h2{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.7em;
+    
+}
+.content-section p{
+    font-size: 1em;
+}
+.sha{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;  }
+    .bgcolor{
+        background:#c53d3c;
+    }
+    .navbar-nav.ms-auto {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-brand img {
+        max-height: 60px;
+        width: auto;
+    }
+    .centered-nav {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
